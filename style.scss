@@ -324,7 +324,7 @@ body {
             min-height:800px;
             width: 100%;
             padding-top: 50px;
-            border: 2px solid red;
+
 
             .container{
                 h2{
@@ -636,7 +636,42 @@ body {
                 }   
 
                 }
+         
             }
+
+            .wildlife{
+                min-height:800px;
+                width: 100%;
+                padding-top: 50px;
+    
+    
+                .container{
+                    h2{
+                        font-size:36px;
+                      
+                    }
+                    p{
+                        font-size: 16px;
+                        padding-top:20px;
+                    }
+                    .row{
+                        padding-top:20p
+                        col-md-6{
+                            padding-top: 80px;
+    
+                            
+                            }
+                            .col-md-2{
+                                height: 80%;
+                                padding-top: -10px;
+                                column-gap: 10px;
+                    
+                                
+                            }
+                        }
+
+                    }
+                }    
         
     
 
