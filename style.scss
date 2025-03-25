@@ -324,28 +324,23 @@ body {
             min-height:800px;
             width: 100%;
             padding-top: 50px;
+            border: 2px solid red;
 
             .container{
                 h2{
                     font-size:36px;
-                    padding-top: 30px;
+                  
                 }
                 p{
                     font-size: 16px;
                     padding-top:20px;
                 }
                 .row{
-                    padding-top:20px;
-                    gap:5px;
-                    .col-md-6{
+                    padding-top:20p
+                    col-md-6{
                         padding-top: 80px;
 
-                        .col-md-2{
-                            
                         
-                        }
-                        
-
                         }
                     }
                 }
