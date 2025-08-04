@@ -371,6 +371,18 @@ body {
       padding-right: 60px;
     }
   }
+  
+
+  .card-img1{
+    height: 50%;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .paragraph{
+    text-align:start;
+    padding: 10px;
+  }
 
  
 }
@@ -382,7 +394,7 @@ body {
 
   .lion {
     margin-top: 0 !important;
-    width: 80%;
+    width: 100%;
     height: 50px;
     margin: 0 auto 15px auto;
     display: block;
@@ -412,6 +424,8 @@ body {
   .card-img {
     height: 400px;
     width: 100%;
+    object-fit: cover;
+    padding-top: 20px;
   }
 
   .active {
