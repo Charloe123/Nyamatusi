@@ -1,10 +1,14 @@
 body {
+  line-height: 1;
+  font-family: sans-serif;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .banner {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(images/zebra\ banner\ 2\ 1\ \(1\).png);
   background-position: center;
   background-size: cover;
@@ -12,26 +16,69 @@ body {
 .banner .fs-4 {
   color: orangered;
 }
-.banner .nav-link {
+.banner .nav {
+  padding-right: 100px;
+}
+.banner .nav .nav-link {
   color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.banner .hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+.banner .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+}
+.banner .menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  height: 70px;
+}
+.banner .menu.active {
+  display: block;
+}
+.banner .menu li {
+  margin: 10px 0;
+  background-color: white;
 }
 
 .header {
   color: white;
   display: flex;
   justify-content: center;
-  padding-top: 100px;
 }
 .header h1 {
   font-size: 100px;
+  margin-top: 140px;
 }
 
-.container {
-  height: 500px;
+.active {
+  min-height: 600px;
+}
+.active .container {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   width: 100%;
+}
+.active .container .activities {
+  font-size: 30px;
+  padding-top: 70px;
+  width: 100%;
+  text-align: center;
 }
 
 .card-group {
+  padding-top: 40px;
   gap: 10px;
 }
 .card-group .card {
@@ -63,10 +110,18 @@ body {
 }
 
 #testimonials {
+  min-height: 50vh;
   gap: 20px;
 }
+#testimonials .container h2 {
+  font-size: 40px;
+  padding-top: 50px;
+}
+#testimonials .container .row {
+  padding-top: 50px;
+}
 #testimonials .container .col-md-3 {
-  height: 400px;
+  min-height: 400px;
   position: relative;
 }
 #testimonials .container .col-md-3 .overlay {
@@ -74,11 +129,11 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(255, 68, 0, 0.479);
+  min-height: 100%;
+  background-color: rgba(167, 95, 69, 0.479);
 }
 #testimonials .container .col-md-5 {
-  height: 400px;
+  min-height: 400px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -86,62 +141,200 @@ body {
   text-align: center;
 }
 #testimonials .container .col-md-5 span {
-  height: 3px;
+  min-height: 3px;
   width: 100px;
   background-color: red;
 }
 
 .gallery {
-  height: 700px;
+  min-height: 800px;
 }
-.gallery .container .row {
-  padding: 10px;
+.gallery .container {
+  padding-top: 40px;
 }
-.gallery .container .row .col-6 img, .gallery .container .row .col-3 img, .gallery .container .row .col-2 img {
-  width: 100%;
-  height: 100%;
+.gallery .container h4 {
+  font-size: 36px;
+  margin-top: 80px;
 }
-
-.footer .container-fluid {
-  height: 350px;
-  width: 100%;
-  background-color: orangered;
+.gallery .container img {
+  height: 40vh;
+  padding-top: 25px;
 }
 
 .story {
   min-height: 600px;
   width: 100%;
 }
-.story .col-2 img {
-  height: 50%;
+.story .container .paragraph {
+  font-size: 16px;
+}
+.story .container .para {
+  font-size: 16px;
+  padding-top: 10px;
+}
+.story .container h2 {
+  font-size: 36px;
+  margin-top: 50px;
+}
+.story .container .sign {
+  margin-top: 35px;
+  width: 30%;
+  height: 45px;
+}
+.story .col-md-2 img {
+  min-height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.story .col-2 img .lion {
-  margin-top: -5px;
+.story .col-md-2 img .lion {
+  padding-top: 40px;
 }
 
 .iteneries {
-  min-height: 600px;
+  min-height: 500px;
   width: 100%;
 }
-.iteneries .container .row .col-6 .para {
-  display: flex;
+.iteneries .container h1 {
+  font-size: 36px;
 }
-.iteneries .container .row .col-6 .para .text {
-  background-color: orangered;
-  width: 50%;
+.iteneries .container .row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  text-align: center;
+  padding-top: 60px;
+}
+.iteneries .container .row .col-md-6 .para {
+  width: 50%;
+}
+.iteneries .container .row .col-md-6 .para .par {
+  background-color: orangered;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
   color: white;
+}
+.iteneries .container .row .overlay {
+  left: 0;
+  top: 0;
+  min-height: 100%;
+}
+.iteneries ul li {
+  margin-top: 10px;
 }
 
 .wildlife {
   min-height: 800px;
   width: 100%;
   padding-top: 50px;
+}
+.wildlife .container h2 {
+  font-size: 36px;
+  padding-top: 30px;
+}
+.wildlife .container p {
+  font-size: 16px;
+  padding-top: 20px;
+}
+.wildlife .container .row {
+  padding-top: 40px;
+}
+.wildlife .container .row .col-md-6 {
+  padding-top: 100px;
+}
+
+.footer .container-fluid .row {
+  font-size: 17px;
+}
+.footer .container-fluid .row h5 {
+  padding-top: 15px;
+  font-size: 18px;
+}
+.footer .container-fluid .row ul li {
+  padding-top: 10px;
+}
+
+@media (max-width: 568px) {
+  .banner {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/zebra\ banner\ 2\ 1\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+  }
+  .banner .fs-4 {
+    color: orangered;
+    padding-right: 80px;
+  }
+  .banner .nav {
+    padding-right: 30px;
+  }
+  .banner .nav .nav-link {
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 10px;
+  }
+  .banner .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: px;
+  }
+  .header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+  }
+  .header h1 {
+    font-size: 36px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 568px) and (max-width: 768px) {
+  .col-md-2 img {
+    margin-bottom: 15px;
+  }
+  .lion {
+    margin-top: 0 !important;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto 15px auto;
+    display: block;
+  }
+  .table {
+    height: 60%;
+  }
+  .rows {
+    height: 80%;
+  }
+  .rowss {
+    margin-top: 30px;
+    height: 95%;
+  }
+  .elegant {
+    height: 50%;
+  }
+  .rowsss {
+    height: 70%;
+  }
+  .card-img {
+    height: 400px;
+    width: 100%;
+  }
+}
+@media (max-width: 568px) {
+  .active {
+    min-height: 600px;
+  }
+  .active .container {
+    min-height: 600px;
+    justify-items: center;
+    width: 100%;
+  }
+  .active .container .activities {
+    font-size: 30px;
+    padding-top: 220px;
+  }
 }/*# sourceMappingURL=style.css.map */
