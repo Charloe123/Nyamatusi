@@ -55,7 +55,10 @@ body {
     display: none;
     list-style: none;
     padding: 0;
+<<<<<<< HEAD
     height: 70px;
+=======
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
   }
 
   .menu.active {
@@ -76,7 +79,11 @@ body {
     color: white;
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
 
+=======
+    padding-top:90px;
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
     h1{
         font-size:100px;
         margin-top:140px;
@@ -84,6 +91,7 @@ body {
     }
     
 } 
+<<<<<<< HEAD
 .active {
   min-height: 600px;
 
@@ -103,11 +111,31 @@ body {
       text-align: center;      // Center the heading text
     }
   }
+=======
+.active{
+    min-height: 600px;
+    .container{
+        
+        width: 100%;
+    
+    
+        .activities{
+            font-size:32px;
+        }
+
+}   
+    
+
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
 }
 
     
     .card-group{
+<<<<<<< HEAD
         padding-top: 40px;
+=======
+        padding-top: 70px;
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
         gap: 10px;
         
 
@@ -220,10 +248,20 @@ body {
                     }
                 }
             
+<<<<<<< HEAD
     
     
+=======
+    
+        
+
+    
+   
+    
+   
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
         .story{
-            min-height:600px;
+            min-height:700px;
             width: 100%;
 
             .container{
@@ -294,11 +332,21 @@ body {
                             .par{
                                 background-color: orangered;
                                 width:100%;
+<<<<<<< HEAD
                                 height: 70vh;
+=======
+                                height: 80vh;
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
                                 display: flex;
                                 flex-direction:column;
                                 color: white;
                         
+<<<<<<< HEAD
+=======
+                            }
+
+                    
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
                             }
                           
 
@@ -325,6 +373,21 @@ body {
                         li{
                             margin-top: 10px;
                         }
+                        .pics{
+                        
+                            
+                            }
+                        
+                        .overlay{
+                            
+                            left: 0;
+                            top: 0;
+                    
+                            min-height: 100%;
+                        
+                        }
+                    }   
+
                     }
                 }
             
@@ -334,6 +397,7 @@ body {
             width: 100%;
             padding-top: 50px;
 
+<<<<<<< HEAD
             .container{
                 h2{
                     font-size:36px;
@@ -348,7 +412,24 @@ body {
                     .col-md-6{
                         padding-top: 100px;
                         
+=======
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
 
+            .container{
+                h2{
+                    font-size:36px;
+                  
+                }
+                p{
+                    font-size: 16px;
+                    padding-top:20px;
+                }
+                .row{
+                    padding-top:20p
+                    col-md-6{
+                        padding-top: 80px;
+
+                        
                         }
                     }
                 }
@@ -434,6 +515,7 @@ body {
         
             }
     }
+<<<<<<< HEAD
     @media (max-width: 768px) {
         .col-md-2 img {
           margin-bottom: 15px;
@@ -473,25 +555,272 @@ body {
         }
         
       }
+=======
+    .story{
+        min-height:700px;
+        width: 100%;
+
+        .container{
+
+            .paragraph{
+                font-size:14px;
+                padding-right: 30px;
+               
+            }
+            .para{
+                font-size:14px;
+                padding-right:50px;
+
+            }
+            h2{
+                font-size: 32px;
+                margin-top:20px;
+            }
+            .sign{
+                margin-top:35px;
+                width: 30%;
+                height:40px;
+            }
+
+            .col-md-2{
+                img{
+                    min-height:50%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top:50px;
+
+
+                    .lion{
+                        padding-top:20px;
+                        min-height: 30%;
+        
+                       
+                    }
+                }
+            }    
+
+            
+        
+}
+    }
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
     .active{
         min-height: 600px;
         .container{
             min-height: 600px;
+<<<<<<< HEAD
             justify-items: center;
+=======
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
             
             width: 100%;
         
         
             .activities{
                 font-size:30px;
+<<<<<<< HEAD
                 padding-top:220px;
+=======
+                padding-top:190px;
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
             }
     
     }   
         
+<<<<<<< HEAD
 }    
 } 
       
+=======
+}
+
+#testimonials{
+    min-height: 50vh;
+    gap: 20px;
+    
+    
+    .container{
+        h2{
+            font-size:36px;
+            padding-top: 50px;
+        
+        }
+        .row{
+            padding-top:40px;
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+       
+        
+        .col-md-3{
+            min-height:400px;
+            position: relative;
+            .overlay{
+                
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                min-height: 100%;
+                background-color: rgba(167, 95, 69, 0.479);
+            }
+        }
+        .col-md-5{
+        min-height: 380px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-right: 20px;
+        
+
+
+          span{
+            min-height:3px;
+            width: 100px;
+            background-color: red;
+
+          }
+
+         
+          }
+
+            
+        }
+    }
+    .iteneries{
+        min-height:600px;
+        width: 100%;
+        .container{
+            h1{
+                font-size:32px;
+            }
+            
+            .row{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            
+                padding-top:60px;
+                .col-md-6{
+                    .para{
+                        width: 50%;
+                        padding-top:-100px;
+                        .par{
+
+                            background-color: orangered;
+                            width:100%;
+                            height: 80vh;
+                            display: flex;
+                            flex-direction:column;
+                            color: white;
+
+                            h3{
+                                margin-top: -100px;
+                            }
+                            p{
+                                margin-top: -20px;
+                            }
+                            ul{
+                                margin-top: -10px;
+                                li{
+                                   
+                                    font-size: 10px;
+                                }
+                              
+                                }
+                                img{
+                                    margin-top:15px;
+                                }
+                            }
+                            .see-all{
+                                .rectangle{
+                                    img{
+                                        margin-top: -5px;
+                                    }
+
+                            }
+                           
+                    
+                        }
+                        .icon{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img{
+                                margin-left: 60px;
+
+                            }
+                            
+                        }
+
+                
+                        }
+                    }
+                    .pics{
+                    
+                        
+                        }
+                    
+                    .overlay{
+                        
+                        left: 0;
+                        top: 0;
+                
+                        min-height: 100%;
+                    
+                    }
+                }   
+
+                }
+         
+            }
+
+            .wildlife{
+                min-height:800px;
+                width: 100%;
+                padding-top: 50px;
+    
+    
+                .container{
+                    h2{
+                        font-size:36px;
+                      
+                    }
+                    p{
+                        font-size: 16px;
+                        padding-top:20px;
+                    }
+                    .row{
+                        padding-top:20p
+                        col-md-6{
+                            padding-top: 80px;
+    
+                            
+                            }
+                            .col-md-2{
+                                height: 80%;
+                                padding-top: -10px;
+                                column-gap: 10px;
+                    
+                                
+                            }
+                        }
+
+                    }
+                }    
+        
+    
+
+}       
+>>>>>>> e1d1d25a409fc4c5fd3de50a6cd5d853868c47f7
 
 
     
